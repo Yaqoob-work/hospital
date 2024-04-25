@@ -1,0 +1,27 @@
+.navbarstyle {
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+}
+
+@media print {
+    .navbarstyle {
+        display: none;
+    }
+}
+
+.navbarstyle>a {
+    display: flex;
+    font-size: 33px;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.dropdown a {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+
+}

@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(95, 213, 215);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tablelist {
+  border: 3px solid ;
+  background: #8538d7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tablelist tr{
+  border: 1px solid;
+}
+.tablelist td{
+  border: 1px solid;
+  padding: 5px;
+}
+.tablelist td:last-child{
+  border:none;
+}
+.Appointment{
+  background: #8538d7;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* this code for print page in view component */
+
+.printable{
+  display: block;
+  margin: 1vh auto;
+  padding: 2vw;
+  width: calc(2480px/4);
+  height: calc(3508px/4);
+  background: rgba(3, 238, 46, 0.67);
+  color: blueviolet;
+}
+
+.slipbody{
+  display: flex;
+}
+.slipbody span{
+  font-size: 200px;
+  align-items: center;
+  margin: 0 auto;
+}
+.slipbodylogo{
+  
+  opacity: 0.5;
+}
+.printable button{
+margin: 3px;
+}
+@media print{
+  .printable button{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .printable{
+    border: 1px solid;
   }
 }
